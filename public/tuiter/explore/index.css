@@ -33,26 +33,25 @@
 }
 
 .wd-tabs {
+    font-size: 15px;
     color: rgb(110, 118, 125);
     border-bottom: rgb(110, 118, 125);
-    /*margin: 16px;*/
-    padding: 16px;
+    padding: 12px;
     text-decoration: none;
 }
 
 .wd-tabs-selected {
-    color: rgb(110, 118, 125);
+    font-size: 15px;
+    color: rgb(29, 161, 242);
     border-bottom: rgb(29, 161, 242);
-    /*margin: 16px;*/
-    padding: 16px;
+    padding: 12px;
     text-decoration: none;
     border-width: 3px;
     border-style: solid;
     border-top: none;
     border-left: none;
     border-right: none;
-    /*border-color: rgb(29, 161, 242);*/
-    /*padding: 1em;*/
+    border-color: rgb(29, 161, 242);
 }
 
 .wd-for-you-cha {
@@ -64,13 +63,7 @@
     border-spacing: 10px;
 }
 
-/*.wd-for-you-container {*/
-/*    height: 40px;*/
-/*    border-bottom: rgb(29, 161, 242);*/
-/*    border-bottom-style: dashed;*/
-/*}*/
-
-.grid-row {
+.wd-grid-row {
     clear: both;
     width: 100%;
 }
@@ -79,7 +72,8 @@ hr {
     background-color: rgb(110, 118, 125);
 }
 
-.grid-col-main-content {
+.wd-grid-col-main-content {
+    font-size: 13px;
     width: 80%;
     float: left;
 }
@@ -90,19 +84,33 @@ hr {
 }
 
 .wd-grid-col-right {
-    /*width: 10%;*/
     float: right;
 }
 
-.grid-col-image {
+.wd-bordered-section {
+    border-bottom: lightgray;
+    padding-bottom: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.wd-grid-col-image {
     width: 20%;
+    height: 100%;
     float: left;
-    /*padding-right: 16px;*/
 }
 
-.more-option {
+.wd-more-option {
     float: right;
-    margin-right: 10%;
+    /*margin-right: 12px;*/
+}
+
+hr {
+    color: darkgray;
+    border-width: 1px;
 }
 
 img {
