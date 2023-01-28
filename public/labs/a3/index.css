@@ -243,3 +243,127 @@ p#id-selector-2 {
     width: 20%;
     float: left;
 }
+
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-list-counter {
+    transform: rotate(100deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+
+.rotate-image {
+    transform: rotate(-10deg);
+}
+
+.rotate-image-my-own {
+    transform: rotate(-10deg);
+}
+
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);
+}
+
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;
+}
+
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;
+}
+
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;
+}
+
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-linear-my-own {
+    background: linear-gradient(pink, lightskyblue);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-radial-my-own {
+    background: radial-gradient(pink, lightskyblue);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-positioned {
+    background: radial-gradient(
+            at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+
+.gradients-positioned-my-own {
+    background: radial-gradient(
+            at bottom right, lightpink, mediumpurple);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+
+
+
+
