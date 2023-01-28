@@ -1,0 +1,122 @@
+.wd-whole-page {
+    background-color: black;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-search-bar {
+    position: relative;
+    top: 16px;
+    width: 90%;
+    height: 25px;
+    background-color: darkgray;
+    border-radius: 50px;
+    border: none;
+    background-image: url(search_icon.png);
+    background-repeat: no-repeat;
+    background-position: left 0.5% center;
+    outline: 0;
+    background-size: contain;
+    padding-left: 40px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.wd-gear-icon {
+    height: 60px;
+    float: right;
+}
+
+.wd-search-container {
+    width: 100%;
+}
+
+.wd-tabs {
+    color: rgb(110, 118, 125);
+    border-bottom: rgb(110, 118, 125);
+    /*margin: 16px;*/
+    padding: 16px;
+    text-decoration: none;
+}
+
+.wd-tabs-selected {
+    color: rgb(110, 118, 125);
+    border-bottom: rgb(29, 161, 242);
+    /*margin: 16px;*/
+    padding: 16px;
+    text-decoration: none;
+    border-width: 3px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /*border-color: rgb(29, 161, 242);*/
+    /*padding: 1em;*/
+}
+
+.wd-for-you-cha {
+    height: 20px;
+    color: rgb(29, 161, 242);
+    margin: 16px;
+    text-decoration: none;
+    border-bottom: rgb(29, 161, 242);
+    border-spacing: 10px;
+}
+
+/*.wd-for-you-container {*/
+/*    height: 40px;*/
+/*    border-bottom: rgb(29, 161, 242);*/
+/*    border-bottom-style: dashed;*/
+/*}*/
+
+.grid-row {
+    clear: both;
+    width: 100%;
+}
+
+hr {
+    background-color: rgb(110, 118, 125);
+}
+
+.grid-col-main-content {
+    width: 80%;
+    float: left;
+}
+
+.wd-grid-col-left-90 {
+    width: 90%;
+    float: left;
+}
+
+.wd-grid-col-right {
+    /*width: 10%;*/
+    float: right;
+}
+
+.grid-col-image {
+    width: 20%;
+    float: left;
+    /*padding-right: 16px;*/
+}
+
+.more-option {
+    float: right;
+    margin-right: 10%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.wd-img {
+    width: 100%;
+    height: auto;
+}
+
+.wd-symbol {
+    width: auto;
+    height: 13px;
+}

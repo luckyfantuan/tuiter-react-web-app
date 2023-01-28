@@ -1,0 +1,134 @@
+.wd-whole-page {
+    background-color: black;
+    /*border-color: rgb(47, 51, 54);*/
+}
+
+.wd-grid-row {
+    clear: both;
+    width: 100%;
+}
+
+.wd-bordered-section {
+    border-bottom: lightgray;
+    padding-bottom: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.wd-grid-col-avatar {
+    margin-left: 16px;
+    margin-top: 12px;
+    width: fit-content;
+    float: left;
+}
+
+.wd-grid-col-content {
+    margin-left: 12px;
+    margin-top: 12px;
+    float: left;
+}
+
+.wd-title {
+    color: white;
+    /*size: 20px;*/
+    font-size: 20px;
+    margin-left: 16px;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.wd-user {
+    color: lightgrey;
+    /*size: 13px;*/
+    font-size: 13px;
+    margin-left: 16px;
+    margin-top: 0;
+}
+
+.wd-poster-name {
+    color: white;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.wd-poster-handle {
+    color: lightgrey;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.wd-main-content {
+    color: white;
+    font-size: 15px;
+    padding-right: 16px;
+    margin-top: 12px;
+    max-width: 506px;
+}
+
+.wd-post-section {
+    margin-top: 12px;
+    width: 504px;
+    border: 1px solid lightgray;
+    border-radius: 5%;
+}
+
+.wd-icon-section {
+    padding-top: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-post-image {
+    height: 264px;
+    width: 504px;
+    border-radius: 5% 5% 0 0;
+}
+
+.wd-post-title {
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    margin-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.wd-post-text {
+    color: lightgrey;
+    font-size: 15px;
+    margin-top: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+}
+
+img.wd-avatar-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+img.wd-icon-img {
+    height: 15px;
+    width: 15px;
+    alignment: center;
+}
+
+.wd-icon-number-grey {
+    padding-left: 12px;
+    font-size: 15px;
+    color: lightgrey;
+    alignment: center;
+}
+
+.wd-icon-number-red {
+    padding-left: 12px;
+    font-size: 15px;
+    color: red;
+    alignment: center;
+}
+
