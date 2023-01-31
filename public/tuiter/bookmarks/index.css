@@ -30,7 +30,6 @@
 
 .wd-title {
     color: white;
-    /*size: 20px;*/
     font-size: 20px;
     margin-left: 16px;
     margin-top: 12px;
@@ -38,8 +37,7 @@
 }
 
 .wd-user {
-    color: lightgrey;
-    /*size: 13px;*/
+    color: lightgray;
     font-size: 13px;
     margin-left: 16px;
     margin-top: 0;
@@ -52,7 +50,7 @@
 }
 
 .wd-poster-handle {
-    color: lightgrey;
+    color: lightgray;
     font-size: 15px;
     margin-top: 12px;
 }
@@ -95,7 +93,7 @@
 }
 
 .wd-post-text {
-    color: lightgrey;
+    color: lightgray;
     font-size: 15px;
     margin-top: 12px;
     padding-right: 12px;
@@ -118,7 +116,7 @@ img.wd-icon-img {
 .wd-icon-number-grey {
     padding-left: 12px;
     font-size: 15px;
-    color: lightgrey;
+    color: lightgray;
     alignment: center;
 }
 
