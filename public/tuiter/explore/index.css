@@ -32,16 +32,21 @@
 .wd-tabs {
     font-size: 15px;
     color: rgb(110, 118, 125);
-    border-bottom: rgb(110, 118, 125);
-    padding: 12px;
+    padding: 16px;
     text-decoration: none;
+    /*border-width: 1px;*/
+    /*border-style: solid;*/
+    /*border-top: none;*/
+    /*border-left: none;*/
+    /*border-right: none;*/
+    /*border-color: rgb(110, 118, 125);*/
 }
 
 .wd-tabs-selected {
     font-size: 15px;
     color: rgb(29, 161, 242);
     border-bottom: rgb(29, 161, 242);
-    padding: 12px;
+    padding: 16px;
     text-decoration: none;
     border-width: 3px;
     border-style: solid;
