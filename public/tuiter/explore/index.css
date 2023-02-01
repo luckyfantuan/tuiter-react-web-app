@@ -34,26 +34,19 @@
     color: rgb(110, 118, 125);
     padding: 16px;
     text-decoration: none;
-    /*border-width: 1px;*/
-    /*border-style: solid;*/
-    /*border-top: none;*/
-    /*border-left: none;*/
-    /*border-right: none;*/
-    /*border-color: rgb(110, 118, 125);*/
 }
 
 .wd-tabs-selected {
     font-size: 15px;
     color: rgb(29, 161, 242);
     border-bottom: rgb(29, 161, 242);
-    padding: 16px;
+    padding: 14px;
     text-decoration: none;
     border-width: 3px;
     border-style: solid;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-color: rgb(29, 161, 242);
 }
 
 .wd-for-you-cha {
@@ -70,8 +63,9 @@
     width: 100%;
 }
 
-hr {
+hr.wd-hr {
     background-color: rgb(110, 118, 125);
+    border-top: 1px;
 }
 
 .wd-grid-col-main-content {
@@ -101,7 +95,7 @@ hr {
 
 .wd-bordered-section {
     border-bottom: lightgray;
-    padding-bottom: 12px;
+    padding-bottom: 16px;
     border-width: 1px;
     border-style: solid;
     border-top: none;
@@ -130,14 +124,20 @@ hr {
     margin-top: 6px;
 }
 
-.float-left {
+.wd-float-left {
     float: left;
 }
 
+.wd-float-done {
+    clear: both;
+}
 
-hr {
-    color: darkgray;
-    border-width: 1px;
+.wd-author {
+    color: white;
+}
+
+.wd-time {
+    color: rgb(110, 118, 125);
 }
 
 img {
