@@ -75,9 +75,19 @@ hr {
 }
 
 .wd-grid-col-main-content {
+    color: white;
+    font-size: 14px;
+    width: 80%;
+    float: left;
+    margin-bottom: 0px;
+}
+
+.wd-grid-col-main-content-gray {
+    color: rgb(110, 118, 125);
     font-size: 13px;
     width: 80%;
     float: left;
+    margin-bottom: 4px;
 }
 
 .wd-grid-col-left-90 {
@@ -106,9 +116,24 @@ hr {
 }
 
 .wd-more-option {
+    margin-top: 4px;
+    font-size: 13px;
     float: right;
-    /*margin-right: 12px;*/
+    color: rgb(110, 118, 125);
 }
+
+.wd-topic {
+    font-size: 13px;
+    float: left;
+    color: rgb(110, 118, 125);
+    width: 80%;
+    margin-top: 6px;
+}
+
+.float-left {
+    float: left;
+}
+
 
 hr {
     color: darkgray;
