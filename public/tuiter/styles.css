@@ -1,5 +1,17 @@
 .wd-whole-page {
+    width: 95%;
     margin-left: 16px;
     background-color: black;
     border: solid 1px rgb(47, 51, 54);
+}
+
+.wd-more-option {
+    margin-top: 4px;
+    font-size: 13px;
+    float: right;
+    color: rgb(110, 118, 125);
+}
+
+.wd-float-done {
+    clear: both;
 }
