@@ -103,7 +103,8 @@ hr.wd-hr {
 .wd-grid-col-image {
     width: 20%;
     height: 100%;
-    float: left;
+    float: right;
+    margin-top: 16px;
 }
 
 .wd-more-option {
