@@ -42,12 +42,15 @@
 }
 
 .wd-bookmark {
+    width: 50%;
     float: left;
 }
 
 .wd-more-option-blue {
     color: rgb(29, 161, 242);
     float: right;
+    padding-right: 16px;
+    font-size: 10px;
 }
 
 .wd-user {

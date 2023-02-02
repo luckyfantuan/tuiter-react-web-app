@@ -6,12 +6,20 @@
 }
 
 .wd-more-option {
-    margin-top: 4px;
-    font-size: 13px;
+    font-size: 8px;
     float: right;
     color: rgb(110, 118, 125);
+    padding-right: 16px;
 }
 
 .wd-float-done {
     clear: both;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
