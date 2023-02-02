@@ -3,104 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="index.css"
           rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
 </head>
 <body class="wd-whole-page">
-<div class="wd-grid-row" id="a">
-    <div class="wd-grid-col-left-90">
-        <input class="wd-search-bar" type="search" placeholder="Search Tuiter"/>
-    </div>
-    <div class="wd-grid-col-right">
-        <a href="explore-settings.html"><img class="wd-gear-icon" src="gear-icon.png"/></a>
-    </div>
+<div class="left-col">
+    <nav class="nav flex-column">
+        <a class="nav-link active" aria-current="page" href="#"><img src="/docs/5.2/assets/brand/bootstrap-logo.svg"
+                                                                     alt="Logo" width="30" height="24"
+                                                                     class="d-inline-block align-text-top"></a>
+        <a class="nav-link active" aria-current="page" href="#"><img src="/docs/5.2/assets/brand/bootstrap-logo.svg"
+                                                                     alt="Logo" width="30" height="24"
+                                                                     class="d-inline-block align-text-top">Home</a>
+        <a class="nav-link" href="#">Lists</a>
+        <a class="nav-link" href="#">Profile</a>
+        <a class="nav-link">More</a>
+        <a class="nav-link" href="#">Lists</a>
+        <a class="nav-link" href="#">Profile</a>
+        <a class="nav-link">More</a>
+    </nav>
 </div>
-<div id="b">
-    <div class="wd-grid-row wd-bordered-section">
-        <a class="wd-tabs-selected" href="explore-settings.html">For You</a>
-        <a class="wd-tabs" href="explore-settings.html">Trending</a>
-        <a class="wd-tabs" href="explore-settings.html">COVID-19</a>
-        <a class="wd-tabs" href="explore-settings.html">News</a>
-        <a class="wd-tabs" href="explore-settings.html">Sports</a>
-        <a class="wd-tabs" href="explore-settings.html">Entertainment</a>
-    </div>
-    <br/>
-</div>
-<div class="wd-grid-row wd-bordered-section" id="c1">
-    <div class="wd-grid-row">
-        <div>
-            <div>
-                <div class="
-                wd-topic wd-float-left">Trending in Science
-                </div>
-                <div class="wd-more-option">&#x2022; &#x2022; &#x2022;
-                </div>
-                <div class="wd-float-done"></div>
-            </div>
-            <p class="wd-grid-col-main-content"><b>Starship</b></p>
-            <p class="wd-grid-col-main-content-gray">55.5k Tweets</p>
-            <br/>
+<div class="mid-col">
+    <div class="card text-center">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="true" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>
-    <div class="wd-grid-row">
-        <div>
-            <div>
-                <div class="wd-topic wd-float-left">Sports Trending</div>
-                <div class="wd-more-option">&#x2022; &#x2022; &#x2022;
-                </div>
-                <div class="wd-float-done"></div>
-            </div>
-            <p class="wd-grid-col-main-content"><b>Joe Rogan</b></p>
-            <p class="wd-grid-col-main-content-gray">5,218 Tweets</p>
-        </div>
-    </div>
-    <div class="wd-float-done"></div>
 </div>
-<div class="wd-grid-row wd-bordered-section" id="d1">
-    <div class="wd-grid-col-main-content">
-        <p class="wd-author"><img class="wd-symbol" src="nyt-symbol.png"/> <b>The New York Times</b><span
-                class="wd-time"> <img class="wd-symbol" src="checkmark.png"/> &#x2022; Yesterday</span>
-        </p>
-        <p class="wd-author"><b>CNN's Cuomo conundrum: A star anchor with a brother in trouble</b></p>
-    </div>
-    <div class="wd-grid-col-image">
-        <img src="d1.png">
-    </div>
-    <div class="wd-float-done"></div>
-</div>
-<div class="wd-grid-row wd-bordered-section" id="e">
-    <div class="wd-grid-col-main-content">
-        <p class="wd-time">COVID-19 &#x2022; LIVE</p>
-        <p class="wd-author"><b>COVID-19: News and updates for Massachusetts</b></p>
-    </div>
-    <div class="wd-grid-col-image">
-        <img src="e.png"/>
-    </div>
-    <div class="wd-float-done"></div>
-</div>
-<div class="wd-grid-row wd-bordered-section" id="d2">
-    <div class="wd-grid-col-main-content">
-        <p class="wd-author"><img class="wd-symbol" src="bloomberg-symbol.png"/> <b>Bloomberg Opinion</b><span
-                class="wd-time"> <img class="wd-symbol" src="checkmark.png"/> &#x2022; Yesterday</span>
-        </p>
-        <p class="wd-author"><b>Thinking about getting a booster? Read this first.</b></p>
-    </div>
-    <div class="wd-grid-col-image">
-        <img src="d2.png">
-    </div>
-    <div class="wd-float-done"></div>
-</div>
-<div class="wd-grid-row wd-bordered-section" id="c2">
-    <div class="wd-grid-col-main-content">
-        <p class="wd-time">Trending in United States</p>
-        <p class="wd-author"><b>Wonder Bread</b></p>
-        <p class="wd-time">1,259 Tweets</p>
-    </div>
-    <div>
-        <p class="wd-more-option">&#x2022; &#x2022; &#x2022;
-        <p/>
-    </div>
-    <div class="wd-float-done"></div>
+<div class="right-col">
+
 </div>
 </body>
 </html>

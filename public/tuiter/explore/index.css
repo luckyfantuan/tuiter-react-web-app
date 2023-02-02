@@ -1,5 +1,20 @@
 @import "../styles.css";
 
+.left-col {
+    width: 20%;
+    float: left;
+}
+
+.mid-col {
+    width: 60%;
+    float: left;
+}
+
+.right-col {
+    width: 20%;
+    float: right;
+}
+
 .wd-search-bar {
     position: relative;
     top: 16px;
@@ -14,132 +29,4 @@
     outline: 0;
     background-size: contain;
     padding-left: 40px;
-}
-
-::placeholder {
-    color: white;
-}
-
-.wd-gear-icon {
-    height: 60px;
-    float: right;
-}
-
-.wd-search-container {
-    width: 100%;
-}
-
-.wd-tabs {
-    font-size: 15px;
-    color: rgb(110, 118, 125);
-    padding: 16px;
-    text-decoration: none;
-}
-
-.wd-tabs-selected {
-    font-size: 15px;
-    color: rgb(29, 161, 242);
-    border-bottom: rgb(29, 161, 242);
-    padding: 14px;
-    text-decoration: none;
-    border-width: 3px;
-    border-style: solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
-
-.wd-for-you-cha {
-    height: 20px;
-    color: rgb(29, 161, 242);
-    margin: 16px;
-    text-decoration: none;
-    border-bottom: rgb(29, 161, 242);
-    border-spacing: 10px;
-}
-
-.wd-grid-row {
-    clear: both;
-    width: 100%;
-}
-
-hr.wd-hr {
-    background-color: rgb(110, 118, 125);
-    border-top: 1px;
-}
-
-.wd-grid-col-main-content {
-    color: white;
-    font-size: 14px;
-    width: 80%;
-    float: left;
-    margin-bottom: 0px;
-}
-
-.wd-grid-col-main-content-gray {
-    color: rgb(110, 118, 125);
-    font-size: 13px;
-    width: 80%;
-    float: left;
-    margin-bottom: 4px;
-}
-
-.wd-grid-col-left-90 {
-    width: 90%;
-    float: left;
-}
-
-.wd-grid-col-right {
-    float: right;
-}
-
-.wd-bordered-section {
-    border-bottom: rgb(47, 51, 54);
-    padding-bottom: 16px;
-    border-width: 1px;
-    border-style: solid;
-}
-
-.wd-grid-col-image {
-    width: 20%;
-    height: 100%;
-    float: right;
-    margin-top: 16px;
-}
-
-
-.wd-topic {
-    font-size: 13px;
-    float: left;
-    color: rgb(110, 118, 125);
-    width: 80%;
-    margin-top: 6px;
-}
-
-.wd-float-left {
-    float: left;
-}
-
-.wd-author {
-    color: white;
-}
-
-.wd-time {
-    color: rgb(110, 118, 125);
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 5%;
-}
-
-.wd-img {
-    width: 100%;
-    height: auto;
-}
-
-.wd-symbol {
-    width: auto;
-    height: 13px;
 }
