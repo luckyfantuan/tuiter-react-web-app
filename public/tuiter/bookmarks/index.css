@@ -1,12 +1,13 @@
 @import "../styles.css";
 
 .wd-grid-row {
+    float: left;
     clear: both;
     width: 100%;
 }
 
 .wd-bordered-section {
-    border-bottom: lightgray;
+    border-bottom: rgb(47, 51, 54);
     padding-bottom: 12px;
     border-width: 1px;
     border-style: solid;
@@ -22,6 +23,10 @@
     float: left;
 }
 
+.wd-name-section {
+    width: 100%;
+}
+
 .wd-grid-col-content {
     margin-left: 12px;
     margin-top: 12px;
@@ -34,6 +39,18 @@
     margin-left: 16px;
     margin-top: 12px;
     margin-bottom: 0;
+}
+
+.wd-bookmark {
+    width: 50%;
+    float: left;
+}
+
+.wd-more-option-blue {
+    color: rgb(29, 161, 242);
+    float: right;
+    padding-right: 16px;
+    font-size: 10px;
 }
 
 .wd-user {
@@ -66,7 +83,7 @@
 .wd-post-section {
     margin-top: 12px;
     width: 504px;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(47, 51, 54);
     border-radius: 5%;
 }
 
