@@ -6,24 +6,39 @@
     <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="index.css"
           rel="stylesheet"/>
-    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <!--    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          rel="stylesheet"/>
 </head>
 <body class="wd-whole-page">
 <div class="left-col">
-    <nav class="nav flex-column">
-        <a class="nav-link active" aria-current="page" href="#"><img src="/docs/5.2/assets/brand/bootstrap-logo.svg"
-                                                                     alt="Logo" width="30" height="24"
-                                                                     class="d-inline-block align-text-top"></a>
-        <a class="nav-link active" aria-current="page" href="#"><img src="/docs/5.2/assets/brand/bootstrap-logo.svg"
-                                                                     alt="Logo" width="30" height="24"
-                                                                     class="d-inline-block align-text-top">Home</a>
-        <a class="nav-link" href="#">Lists</a>
-        <a class="nav-link" href="#">Profile</a>
-        <a class="nav-link">More</a>
-        <a class="nav-link" href="#">Lists</a>
-        <a class="nav-link" href="#">Profile</a>
-        <a class="nav-link">More</a>
-    </nav>
+    <div class="row">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action disabled">
+                <i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="list-group-item list-group-item-action active">
+                <i class="fa-brands fa-apple"></i> Home</a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-hashtag"></i> Explore</a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-bell"></i> Notification</a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-envelope"></i> Messages</a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-bookmark"></i> Bookmarks</a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-list"></i> Lists</a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-user"></i> Profile</a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa-solid fa-circle-info"></i> More</a>
+        </div>
+    </div>
+    <div class="row">
+        <button class="btn btn-primary rounded-pill">
+            Tweet
+        </button>
+    </div>
 </div>
 <div class="mid-col">
     <div class="card text-center">
@@ -47,14 +62,86 @@
             </ul>
         </div>
         <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="row border">
+                <img src="spacex.png"/>
+            </div>
+            <div class="row border">
+                <div class="col-10">
+                    <p class="wd-author">Web Development</p>
+                    <p class="wd-header">
+                        <b class="wd-title">ReactJS</b>
+                        <i class="fa-solid fa-square-check"></i>
+                        <span class="wd-time"> - 2h</span>
+                    </p>
+                    <p class="wd-content"><b>React.js is a component based front end library that makes it very easy to
+                        build Single Page Applications or SPAs</b></p>
+                </div>
+                <div class="col-2">
+                    <img class="wd-icon align-middle" src="reactjs-icon.png">
+                </div>
+            </div>
+            <div class="row border">
+                <div class="col-10">
+                    <p class="wd-header">
+                        <b class="wd-title">JavaScript</b>
+                        <i class="fa-solid fa-square-check"></i>
+                        <span class="wd-time"> - 2h</span>
+                    </p>
+                    <p class="wd-content"><b>JavaScript is programming language that can run on browsers as well as
+                        desktops</b></p>
+                    <p class="wd-tweets">123K Tweets</p>
+                </div>
+                <div class="col-2">
+                    <img class="wd-icon align-middle" src="javascript-icon.png">
+                </div>
+            </div>
+            <div class="row border">
+                <div class="col-10">
+                    <p class="wd-author">Web Development</p>
+                    <p class="wd-header">
+                        <b class="wd-title">jQuery</b>
+                    </p>
+                    <p class="wd-tweets">123K Tweets</p>
+                </div>
+                <div class="col-2">
+                    <img class="wd-icon align-middle" src="jquery-icon.png">
+                </div>
+            </div>
+            <div class="row border">
+                <div class="col-10">
+                    <p class="wd-author">Web Development</p>
+                    <p class="wd-header">
+                        <b class="wd-title">NodeJS</b>
+                        <i class="fa-solid fa-square-check"></i>
+                        <span class="wd-time"> - 2h</span>
+                    </p>
+                    <p class="wd-tweets">123K Tweets</p>
+                </div>
+                <div class="col-2">
+                    <img class="wd-icon align-middle" src="nodejs-icon.png">
+                </div>
+            </div>
+            <!--            <h5 class="card-title">Special title treatment</h5>-->
+            <!--            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+            <!--            <a href="#" class="btn btn-primary">Go somewhere</a>-->
         </div>
     </div>
 </div>
 <div class="right-col">
-
+    <ul class="list-group">
+        <li class="list-group-item disabled">Who to follow</li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <img class="wd-icon" src="jquery-icon.png">
+            <div>
+                <p>Java</p>
+                <p>@Java</p>
+            </div>
+            <button class="btn btn-primary">Follow</button>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">Blade Runner</li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">Lord of the Ring</li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">Star Wars</li>
+    </ul>
 </div>
 </body>
 </html>
