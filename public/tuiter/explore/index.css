@@ -4,6 +4,43 @@
     border: solid 1px rgb(47, 51, 54);
 }
 
+.wd-search-section {
+    border-radius: 50px;
+    margin-bottom: 12px;
+    border: 3px solid lightgray;
+    padding-left: 12px;
+    margin-right: 16px;
+}
+
+.wd-search-barr {
+    box-sizing: border-box;
+    /*width: 80%;*/
+    /*width: 100%;*/
+    border: none;
+    /*border-radius: 50px;*/
+    /*border-color: lightgray;*/
+    /*display: flex;*/
+    /*background-image: element();*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: left 0.5% center;*/
+    /*background-size: contain;*/
+    /*padding-left: 40px;*/
+    outline: none;
+
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+.wd-gear-icon {
+    height: auto;
+}
+
+.wd-search-container {
+    width: 100%;
+}
+
 .left-col {
     width: 20%;
     float: left;
@@ -12,13 +49,13 @@
 }
 
 .mid-col {
-    width: 60%;
+    width: 50%;
     float: left;
     margin-top: 12px;
 }
 
 .right-col {
-    width: 20%;
+    width: 30%;
     float: right;
     margin-top: 12px;
     padding-left: 12px;
@@ -26,18 +63,18 @@
 
 .wd-search-bar {
     position: relative;
-    top: 16px;
     width: 90%;
-    height: 25px;
-    background-color: darkgray;
+    height: 35px;
+    background-color: white;
     border-radius: 50px;
-    border: none;
-    background-image: url(search_icon.png);
+    border: 1px solid lightgray;
+    background-image: url(search-icon-white.png);
     background-repeat: no-repeat;
-    background-position: left 0.5% center;
+    background-position: left 12px center;
     outline: 0;
     background-size: contain;
     padding-left: 40px;
+    margin-bottom: 12px;
 }
 
 .wd-author {
@@ -67,9 +104,10 @@
     width: 100%;
 }
 
-.wd-icon1 {
-    height: 100%;
+.wd-avatar {
+    height: 40px;
     width: auto;
+    border-radius: 25%;
 }
 
 .wd-tweets {
@@ -87,7 +125,17 @@ p {
     margin-bottom: 0;
 }
 
-.btn-primary.tweet-button {
-    border-radius: 25%;
+.tweet-button {
+    margin-top: 12px;
+    /*margin-right: 100px;*/
+    /*padding-right: 12px;*/
     width: 100%;
+}
+
+.margin-l-12 {
+    margin-left: 12px;
+}
+
+.margin-r-12 {
+    margin-right: 12px;
 }
