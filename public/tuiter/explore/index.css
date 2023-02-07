@@ -42,23 +42,16 @@
 }
 
 .left-col {
-    /*width: 20%;*/
-    /*float: left;*/
     margin-top: 12px;
-    padding-right: 12px;
+    padding-right: 20px;
 }
 
 .mid-col {
-    /*width: 50%;*/
-    /*float: left;*/
     margin-top: 12px;
 }
 
 .right-col {
-    /*width: 30%;*/
-    /*float: right;*/
     margin-top: 12px;
-    padding-left: 12px;
 }
 
 .wd-search-bar {
@@ -125,8 +118,16 @@ p {
     margin-bottom: 0;
 }
 
+.list-group-padding {
+    padding-right: 0px;
+    width: 100%;
+}
+
 .tweet-button {
     margin-top: 12px;
+    margin-right: 12px;
+    padding-right: 12px;
+    min-width: fit-content;
     width: 100%;
 }
 
