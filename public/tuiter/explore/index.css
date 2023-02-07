@@ -1,7 +1,7 @@
 .wd-whole-page {
-    width: 95%;
-    margin-left: 16px;
-    border: solid 1px rgb(47, 51, 54);
+    width: 100%;
+    /*margin-left: 16px;*/
+    /*border: solid 1px rgb(47, 51, 54);*/
 }
 
 .wd-search-section {
@@ -42,21 +42,21 @@
 }
 
 .left-col {
-    width: 20%;
-    float: left;
+    /*width: 20%;*/
+    /*float: left;*/
     margin-top: 12px;
     padding-right: 12px;
 }
 
 .mid-col {
-    width: 50%;
-    float: left;
+    /*width: 50%;*/
+    /*float: left;*/
     margin-top: 12px;
 }
 
 .right-col {
-    width: 30%;
-    float: right;
+    /*width: 30%;*/
+    /*float: right;*/
     margin-top: 12px;
     padding-left: 12px;
 }
