@@ -34,6 +34,13 @@
     margin-top: 12px;
 }
 
+.mid-col-challenge {
+    margin-top: 12px;
+    border-left: rgb(29, 161, 242);
+    border-right: rgb(29, 161, 242);
+}
+
+
 .right-col {
     margin-top: 12px;
 }
@@ -233,7 +240,6 @@ p {
     font-size: 15px;
     color: black;
     border-bottom: none;
-    /*padding: 14px;*/
     text-decoration: none;
     border-width: 3px;
     border-top: none;
@@ -251,4 +257,14 @@ p {
     text-align: left;
     font-size: 13px;
     padding-left: 12px;
+}
+
+.mid-border {
+    /*border-color: #636464;*/
+    /*border: red 1em solid;*/
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: rgba(47, 51, 54, .1);
+    border-top: none;
+    border-bottom: none;
 }
