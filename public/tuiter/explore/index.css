@@ -57,7 +57,14 @@
 .wd-author {
     color: rgb(110, 118, 125);
     text-align: left;
-    font-size: 15px;
+    font-size: 13px;
+}
+
+.wd-author-bold {
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    font-size: 13px;
 }
 
 .wd-header {
@@ -158,10 +165,22 @@ p {
 }
 
 .list-group-borderless-with-background {
-    /*border-color: white;*/
     border: none;
-    /*background-color: lightgray;*/
-    border-radius: 8px;
+    width: 100%;
+}
+
+.list-group-borderless-with-background-end {
+    border: none;
+    border-radius-bottomleft: 8px;
+    border-bottom-right-radius: 8px;
+    width: 100%;
+}
+
+.list-group-borderless-with-background-start {
+    border: none;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    width: 100%;
 }
 
 .item-chosen {
@@ -220,4 +239,9 @@ p {
     border-top: none;
     border-left: none;
     border-right: none;
+}
+
+.show-more {
+    magin-left: 8px;
+    color: #1D9BF0;
 }
