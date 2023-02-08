@@ -172,3 +172,52 @@ p {
 .follow-button {
     height: fit-content;
 }
+
+.follow-icon {
+    color: #1D9BF0;
+}
+
+.follow-icon-yellow {
+    color: rgb(255, 191, 0);
+}
+
+.wd-more-option-challenge {
+    font-size: 8px;
+    font-weight: bold;
+    float: right;
+    color: rgb(110, 118, 125);
+    padding-right: 16px;
+}
+
+.wd-bordered-section {
+    border-bottom: rgb(47, 51, 54);
+    padding-bottom: 16px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.wd-tabs-selected {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    border-bottom: rgb(29, 161, 242);
+    /*padding: 14px;*/
+    text-decoration: none;
+    border-width: 3px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.wd-tabs-not-selected {
+    font-size: 15px;
+    color: black;
+    border-bottom: none;
+    /*padding: 14px;*/
+    text-decoration: none;
+    border-width: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
