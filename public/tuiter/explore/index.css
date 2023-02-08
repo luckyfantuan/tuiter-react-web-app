@@ -245,3 +245,10 @@ p {
     magin-left: 8px;
     color: #1D9BF0;
 }
+
+.wd-copyright {
+    color: rgb(110, 118, 125);
+    text-align: left;
+    font-size: 13px;
+    padding-left: 12px;
+}
