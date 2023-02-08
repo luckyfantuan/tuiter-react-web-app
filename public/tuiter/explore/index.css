@@ -17,7 +17,8 @@
 }
 
 .wd-gear-icon {
-    height: auto;
+    color: black;
+    margin-bottom: 12px;
 }
 
 .wd-search-container {
@@ -114,6 +115,16 @@ p {
     width: 100%;
 }
 
+.tweet-button-challenge {
+    margin-top: 12px;
+    margin-right: 12px;
+    padding-right: 12px;
+    min-width: fit-content;
+    width: 100%;
+    background-color: #1D9BF0;
+    font-size: small;
+}
+
 .margin-l-12 {
     margin-left: 12px;
 }
@@ -126,6 +137,38 @@ p {
     background-color: white;
 }
 
-li {
-    display: inline-block;
+.fa-cog {
+    color: #1D9BF0;
+}
+
+.fa-cog-other {
+    color: gray;
+}
+
+.list-text {
+    margin-left: 8px;
+}
+
+.list-text-challenge {
+    color: gray;
+}
+
+.list-group-border {
+    border-color: white;
+}
+
+.list-group-borderless-with-background {
+    /*border-color: white;*/
+    border: none;
+    /*background-color: lightgray;*/
+    border-radius: 8px;
+}
+
+.item-chosen {
+    font-weight: bold;
+    color: black;
+}
+
+.follow-button {
+    height: fit-content;
 }

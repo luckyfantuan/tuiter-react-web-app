@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Explore</title>
+    <title>Explore Challenge</title>
     <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="index.css"
           rel="stylesheet"/>
@@ -14,38 +14,38 @@
     <div class="row col-10">
         <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xl-2 left-col">
             <div class="row">
-                <div class="list-group list-group-padding">
-                    <a href="#" class="list-group-item list-group-item-action disabled">
-                        <i class="fa-brands fa-twitter"></i></a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fa-brands fa-apple"></i>
-                        <span class="d-inline d-none d-xl-inline-block d-l-none">Home</span>
+                <div class="list-group list-group-padding list-group-border">
+                    <a href="#" class="list-group-item list-group-item-action list-group-border disabled">
+                        <i class="fa-brands fa-twitter fa-cog"></i></a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-border">
+                        <i class="fa-solid fa-house fa-cog-other"></i>
+                        <span class="d-inline d-none d-xl-inline-block d-l-none list-text list-text-challenge">Home</span>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action active">
-                        <i class="fa-solid fa-hashtag"></i> <span
-                            class="d-inline d-none d-xl-inline-block d-l-none">Explore</span></a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fa-solid fa-bell"></i> <span
-                            class="d-inline d-none d-xl-inline-block d-l-none">Notification</span></a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fa-solid fa-envelope"></i> <span
-                            class="d-inline d-none d-xl-inline-block d-l-none">Messages</span></a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fa-solid fa-bookmark"></i> <span
-                            class="d-inline d-none d-xl-inline-block d-l-none">Bookmarks</span></a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fa-solid fa-list"></i> <span
-                            class="d-inline d-none d-xl-inline-block d-l-none">Lists</span></a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fa-solid fa-user"></i> <span
-                            class="d-inline d-none d-xl-inline-block d-l-none">Profile</span></a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fa-solid fa-circle-info"></i> <span
-                            class="d-inline d-none d-xl-inline-block d-l-none">More</span></a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-border item-chosen">
+                        <i class="fa-solid fa-hashtag fa-cog-other item-chosen"></i> <span
+                            class="d-inline d-none d-xl-inline-block d-l-none list-text">Explore</span></a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-border">
+                        <i class="fa-solid fa-bell fa-cog-other"></i> <span
+                            class="d-inline d-none d-xl-inline-block d-l-none list-text list-text-challenge">Notification</span></a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-border">
+                        <i class="fa-solid fa-envelope fa-cog-other"></i> <span
+                            class="d-inline d-none d-xl-inline-block d-l-none list-text list-text-challenge">Messages</span></a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-border">
+                        <i class="fa-solid fa-bookmark fa-cog-other"></i> <span
+                            class="d-inline d-none d-xl-inline-block d-l-none list-text list-text-challenge">Bookmarks</span></a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-border">
+                        <i class="fa-solid fa-list fa-cog-other"></i> <span
+                            class="d-inline d-none d-xl-inline-block d-l-none list-text list-text-challenge">Lists</span></a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-border">
+                        <i class="fa-solid fa-user fa-cog-other"></i> <span
+                            class="d-inline d-none d-xl-inline-block d-l-none list-text list-text-challenge">Profile</span></a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-border">
+                        <i class="fa-solid fa-ellipsis fa-cog-other"></i> <span
+                            class="d-inline d-none d-xl-inline-block d-l-none list-text list-text-challenge">More</span></a>
                 </div>
             </div>
             <div class="row">
-                <button class="btn btn-primary rounded-pill tweet-button">
+                <button class="btn btn-primary rounded-pill tweet-button-challenge">
                     Tweet
                 </button>
             </div>
@@ -56,8 +56,10 @@
                     <div class="flex-grow-1">
                         <input class="wd-search-bar" type="search" placeholder="Search Twitter"/>
                     </div>
-                    <div class="flex-shrink-1">
-                        <a href="explore-settings.html"><i class="fa-solid fa-gear fa-2x"></i></a>
+                    <div class="d-flex">
+                        <a href="explore-settings.html" class="d-flex align-items-center wd-gear-icon"
+                           style="text-decoration:none;"><i
+                                class="fa-solid fa-gear fa-lg"></i></a>
                     </div>
                 </div>
             </div>
@@ -148,9 +150,11 @@
             </div>
         </div>
         <div class="col-4 right-col d-none d-lg-block">
-            <ul class="list-group">
-                <li class="list-group-item disabled">Who to follow</li>
-                <li class="list-group-item d-flex align-content-center">
+            <ul class="list-group list-group-borderless-with-background">
+                <li class="list-group-item list-group-border list-group-borderless-with-background bg-light">
+                    <b>Who to follow</b>
+                </li>
+                <li class="list-group-item d-flex align-content-center list-group-borderless-with-background bg-light">
                     <img class="wd-avatar margin-r-12" src="jquery-icon.png">
                     <div class="flex-grow-1">
                         <p class="wd-header">
@@ -159,9 +163,9 @@
                         </p>
                         <p class="wd-author">@Java</p>
                     </div>
-                    <button class="btn btn-primary rounded-pill">Follow</button>
+                    <button class="btn btn-dark rounded-pill follow-button">Follow</button>
                 </li>
-                <li class="list-group-item d-flex align-content-center">
+                <li class="list-group-item d-flex align-content-center list-group-borderless-with-background bg-light">
                     <img class="wd-avatar margin-r-12" src="relativity-space-icon.png">
                     <div class="flex-grow-1">
                         <p class="wd-header">
@@ -170,9 +174,9 @@
                         </p>
                         <p class="wd-author">@relativityspace</p>
                     </div>
-                    <button class="btn btn-primary rounded-pill">Follow</button>
+                    <button class="btn btn-dark rounded-pill follow-button">Follow</button>
                 </li>
-                <li class="list-group-item d-flex align-content-center">
+                <li class="list-group-item d-flex align-content-center list-group-borderless-with-background bg-light">
                     <img class="wd-avatar margin-r-12" src="virgin-galactic-icon.png">
                     <div class="flex-grow-1">
                         <p class="wd-header">
@@ -181,9 +185,9 @@
                         </p>
                         <p class="wd-author">@virgingalactic</p>
                     </div>
-                    <button class="btn btn-primary rounded-pill">Follow</button>
+                    <button class="btn btn-dark rounded-pill follow-button">Follow</button>
                 </li>
-                <li class="list-group-item d-flex align-content-center">
+                <li class="list-group-item d-flex align-content-center list-group-borderless-with-background bg-light">
                     <img class="wd-avatar margin-r-12" src="nasa-icon.png">
                     <div class="flex-grow-1">
                         <p class="wd-header">
@@ -192,9 +196,9 @@
                         </p>
                         <p class="wd-author">@NASA</p>
                     </div>
-                    <button class="btn btn-primary rounded-pill">Follow</button>
+                    <button class="btn btn-dark rounded-pill follow-button">Follow</button>
                 </li>
-                <li class="list-group-item d-flex align-content-center">
+                <li class="list-group-item d-flex align-content-center list-group-borderless-with-background bg-light">
                     <img class="wd-avatar margin-r-12" src="tesla-icon.png">
                     <div class="flex-grow-1">
                         <p class="wd-header">
@@ -203,7 +207,7 @@
                         </p>
                         <p class="wd-author">@Tesla</p>
                     </div>
-                    <button class="btn btn-primary rounded-pill">Follow</button>
+                    <button class="btn btn-dark rounded-pill follow-button">Follow</button>
                 </li>
             </ul>
         </div>
