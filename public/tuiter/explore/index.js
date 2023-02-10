@@ -1,3 +1,4 @@
+import WhoToFollowList from "./WhoToFollowList/index.js";
 import NavigationSidebar from "./NavigationSidebar/index.js";
 
 function exploreComponent() {
@@ -11,12 +12,16 @@ function exploreComponent() {
    <div class="col-10 col-lg-7 col-xl-6 bg-primary">
     <h3>ExploreComponent</h3>
    </div>
-   <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 bg-danger">
-    <h3>WhoToFollowList </h3>
-   </div>
-  </div>
-
-   `);
+   <div class="col-4 right-col d-none d-lg-block">
+        <ul class="list-group">
+            <li class="list-group-item"><b>Who to follow</b></li>
+  
+            ${WhoToFollowList()}
+        </ul>
+    </div>
+    </div>
+    `
+    );
 }
 
 $(exploreComponent);
