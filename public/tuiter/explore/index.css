@@ -62,7 +62,7 @@
 }
 
 .wd-author {
-    color: rgb(110, 118, 125);
+    color: white;
     text-align: left;
     font-size: 13px;
 }
@@ -79,13 +79,13 @@
 }
 
 .wd-title {
-    color: black;
+    color: white;
     text-align: left;
     font-size: 15px;
 }
 
 .wd-content {
-    color: black;
+    color: white;
     text-align: left;
     font-size: 13px;
 }
@@ -161,6 +161,7 @@ p {
 
 .list-text {
     margin-left: 8px;
+    color: white;
 }
 
 .list-text-challenge {
@@ -267,4 +268,12 @@ p {
     border-color: rgba(47, 51, 54, .1);
     border-top: none;
     border-bottom: none;
+}
+
+.icon-color {
+    color: white;
+}
+
+.custom-border {
+    color: rgba(47, 51, 54, .1);
 }
