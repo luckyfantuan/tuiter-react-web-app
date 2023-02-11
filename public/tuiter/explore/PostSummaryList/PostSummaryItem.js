@@ -13,7 +13,7 @@ const PostSummaryItem = (post) => {
                 <p class="wd-content"><b>${post.title}</b></p>
             </div>
             <div class="col-2 mt-2">
-                <img class="wd-icon align-middle" src="../${post.image}">
+                <img class="wd-icon align-middle" src="${post.image}">
             </div>
         </div>
     `
@@ -30,7 +30,7 @@ const PostSummaryItem = (post) => {
                 <p class="wd-content"><b>${post.title}</b></p>
             </div>
             <div class="col-2 mt-2">
-                <img class="wd-icon align-middle" src="../${post.image}">
+                <img class="wd-icon align-middle" src="${post.image}">
             </div>
         </div>
     `
