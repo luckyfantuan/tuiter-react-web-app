@@ -15,7 +15,7 @@ const ExploreComponent = () => {
         </div>
         <div class="card text-center border-0">
             <div class="card-header ps-2">
-                <ul class="nav mb-2 nav-tabs">
+                <ul class="nav mb-2 nav-tabs card-header-tabs">
                     <!-- tabs -->
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="true" href="for-you.html">For you</a>
