@@ -13,8 +13,8 @@ const ExploreComponent = () => {
                 </div>
            </div>
         </div>
-        <div class="card text-center border-0">
-            <div class="card-header ps-2">
+        <div class="card border-0">
+            <div class="card-header text-center ps-2">
                 <ul class="nav mb-2 nav-tabs card-header-tabs">
                     <!-- tabs -->
                     <li class="nav-item">
