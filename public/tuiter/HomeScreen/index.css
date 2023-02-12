@@ -1,0 +1,279 @@
+.wd-whole-page {
+    width: 100%;
+    /*margin-left: 16px;*/
+    /*border: solid 1px rgb(47, 51, 54);*/
+}
+
+.wd-search-section {
+    border-radius: 50px;
+    margin-bottom: 12px;
+    border: 3px solid lightgray;
+    padding-left: 12px;
+    margin-right: 16px;
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+.wd-gear-icon {
+    color: black;
+    margin-bottom: 12px;
+}
+
+.wd-search-container {
+    width: 100%;
+}
+
+.left-col {
+    margin-top: 12px;
+    padding-right: 20px;
+}
+
+.mid-col {
+    margin-top: 12px;
+}
+
+.mid-col-challenge {
+    margin-top: 12px;
+    border-left: rgb(29, 161, 242);
+    border-right: rgb(29, 161, 242);
+}
+
+
+.right-col {
+    margin-top: 12px;
+}
+
+.wd-search-bar {
+    position: relative;
+    width: 90%;
+    height: 35px;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid lightgray;
+    background-image: url(search_icon_1.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: left 12px center;
+    outline: 0;
+    padding-left: 40px;
+    margin-bottom: 12px;
+}
+
+.wd-author {
+    color: white;
+    text-align: left;
+    font-size: 13px;
+}
+
+.wd-author-bold {
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    font-size: 13px;
+}
+
+.wd-header {
+    text-align: left;
+}
+
+.wd-title {
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+
+.wd-content {
+    color: white;
+    text-align: left;
+    font-size: 13px;
+}
+
+.wd-icon {
+    height: auto;
+    width: 100%;
+}
+
+.wd-avatar {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.wd-tweets {
+    color: rgb(110, 118, 125);
+    text-align: left;
+    font-size: 13px;
+}
+
+.wd-time {
+    color: rgb(110, 118, 125);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.list-group-padding {
+    padding-right: 0px;
+    width: 100%;
+}
+
+.tweet-button {
+    margin-top: 12px;
+    margin-right: 12px;
+    padding-right: 12px;
+    min-width: fit-content;
+    width: 100%;
+}
+
+.tweet-button-challenge {
+    margin-top: 12px;
+    margin-right: 12px;
+    padding-right: 12px;
+    min-width: fit-content;
+    width: 100%;
+    background-color: #1D9BF0;
+    font-size: small;
+}
+
+.margin-l-12 {
+    margin-left: 12px;
+}
+
+.margin-r-12 {
+    margin-right: 12px;
+}
+
+.card-background-color {
+    background-color: white;
+}
+
+.fa-cog {
+    color: #1D9BF0;
+}
+
+.fa-cog-other {
+    color: gray;
+}
+
+.list-text {
+    margin-left: 8px;
+    color: white;
+}
+
+.list-text-challenge {
+    color: gray;
+}
+
+.list-group-border {
+    border-color: white;
+}
+
+.list-group-borderless-with-background {
+    border: none;
+    width: 100%;
+}
+
+.list-group-borderless-with-background-end {
+    border: none;
+    border-radius-bottomleft: 8px;
+    border-bottom-right-radius: 8px;
+    width: 100%;
+}
+
+.list-group-borderless-with-background-start {
+    border: none;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    width: 100%;
+}
+
+.item-chosen {
+    font-weight: bold;
+    color: black;
+}
+
+.follow-button {
+    height: fit-content;
+}
+
+.follow-icon {
+    color: #1D9BF0;
+}
+
+.follow-icon-yellow {
+    color: rgb(255, 191, 0);
+}
+
+.wd-more-option-challenge {
+    font-size: 8px;
+    font-weight: bold;
+    float: right;
+    color: rgb(110, 118, 125);
+    padding-right: 16px;
+}
+
+.wd-bordered-section {
+    border-bottom: rgb(47, 51, 54);
+    padding-bottom: 16px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.wd-tabs-selected {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    border-bottom: rgb(29, 161, 242);
+    /*padding: 14px;*/
+    text-decoration: none;
+    border-width: 3px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.wd-tabs-not-selected {
+    font-size: 15px;
+    color: black;
+    border-bottom: none;
+    text-decoration: none;
+    border-width: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.show-more {
+    magin-left: 8px;
+    color: #1D9BF0;
+}
+
+.wd-copyright {
+    color: rgb(110, 118, 125);
+    text-align: left;
+    font-size: 13px;
+    padding-left: 12px;
+}
+
+.mid-border {
+    /*border-color: #636464;*/
+    /*border: red 1em solid;*/
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: rgba(47, 51, 54, .1);
+    border-top: none;
+    border-bottom: none;
+}
+
+.icon-color {
+    color: white;
+}
+
+.custom-border {
+    color: rgba(47, 51, 54, .1);
+}

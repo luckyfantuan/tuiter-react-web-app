@@ -1,0 +1,30 @@
+.wd-avatar {
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.wd-image {
+    height: auto;
+    width: 100%;
+    border-radius: 5% 5% 0 0;;
+    border-bottom: solid 2px rgba(47, 51, 54, .7);
+}
+
+.wd-username {
+    color: white;
+}
+
+.wd-mark {
+    color: white;
+}
+
+.wd-post-section {
+    border-radius: 5%;
+    border: solid 2px rgba(47, 51, 54, .7);
+}
+
+.wd-post-title {
+    color: white;
+    font-weight: bold;
+}

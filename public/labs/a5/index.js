@@ -110,7 +110,7 @@ console.log(numberArray1);
 console.log(stringArray1);
 console.log(variableArray1);
 
-console.log("Array index and length");
+console.log("Array postList and length");
 const length1 = numberArray1.length;
 const index1 = numberArray1.indexOf(3);
 console.log(length1);

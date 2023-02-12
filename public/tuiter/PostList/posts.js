@@ -1,0 +1,27 @@
+export default [
+    {
+        avatar: '../../images/elonmusk-avatar.png',
+        userName: 'Elon Musk',
+        handle: '@elonmusk',
+        time: '23h',
+        summary: 'Consumers are suing Sazerac Company, Inc., the makers of Fireball whiskey,\n                    for\n                    fraud and\n                    misrepresentation, as the mini bottles of the alcoholic beverage don\'t actually contain whiskey.',
+        title: 'There\'s no whiskey in mini bottles of Fireball, so customers are suing for\n                        fraud',
+        text: 'Consumers are suing Sazerac Company, Inc., the makers of Fireball whiskey,\n                        for\n                        fraud and misrepresentation, as the mini bottles of the alcoholic beverage don\'t actually\n                        contain\n                        whiskey.\n\n                        The smaller bottles, named Fireball Cinnamon, are made from a blend of malt beverage and wine,\n                        while\n                        the whiskey-based products are called Fireball Cinnamon Whisky, according to the company\n                        website.',
+        image: '../../images/inspiration4.png',
+        comments: '4.7K',
+        retweets: '3.5K',
+        likes: '37.5K',
+    },
+    {
+        avatar: '../../images/newyorkpost-avatar.png',
+        userName: 'New York Post',
+        handle: '@nypost',
+        time: '23h',
+        summary: 'Grimes seen reading Karl Marx following split with world’s richest man Elon Musk',
+        title: '',
+        text: '',
+        image: '../../images/grimes.png',
+        comments: '965',
+        retweets: '2.4K',
+        likes: '4K',
+    },];
