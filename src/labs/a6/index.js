@@ -1,3 +1,6 @@
+import {Link}
+    from "react-router-dom";
+
 function Assignment6() {
     return (
         <div>
