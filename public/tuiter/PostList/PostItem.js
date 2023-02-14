@@ -7,13 +7,13 @@ const PostItem = (post) => {
         <div class="col-11">
             <div class="row justify-content-start">
                     <div class="col me-auto">
-                        <span class="wd-username">${post.userName}</span>
+                        <span class="wd-username" style="color:white;">${post.userName}</span>
                         <i class="fa-solid fa-square-check wd-mark"></i>
                         <span>${post.handle} &#x2022; ${post.time}</span>
                      </div>
                     <div class="col-auto">&#x2022; &#x2022; &#x2022;</div>
             </div>
-            <div class="row">
+            <div class="row" style="color:white;">
                 <p>${post.summary}</p>
             </div>
             <div class="row wd-post-section">
