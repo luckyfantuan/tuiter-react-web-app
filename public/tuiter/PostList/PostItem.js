@@ -1,6 +1,6 @@
 const PostItem = (post) => {
     return (`
-    <div class="row border-bottom mt-2">
+    <div class="row wd-border-bottom mt-2">
         <div class="col-1">
             <img class="wd-avatar align-middle" src="${post.avatar}">
         </div>

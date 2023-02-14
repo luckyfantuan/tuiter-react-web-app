@@ -277,3 +277,12 @@ p {
 .custom-border {
     color: rgba(47, 51, 54, .1);
 }
+
+.wd-border-bottom {
+    border-bottom: solid rgba(47, 51, 54, .6);
+}
+
+.wd-post-section {
+    border: solid rgba(47, 51, 54, .6);
+    border-radius: 12px;
+}
