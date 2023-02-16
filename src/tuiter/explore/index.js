@@ -11,11 +11,11 @@ const ExploreComponent = () => {
                     <input placeholder="Search Tuiter"
                            className="form-control rounded-pill ps-5"/>
                     <i className="bi bi-search position-absolute
-                       wd-nudge-up"></i>
+                       wd-nudge-up align-middle"></i>
                 </div>
                 <div className="col-1">
                     <i className="wd-bottom-4 text-primary float-end bi
-                       bi-gear-fill fs-2 position-relative"></i>
+                       bi-gear-fill fs-2 position-relative align-middle"></i>
                 </div>
             </div>
             <ul className="nav nav-pills mb-2">
