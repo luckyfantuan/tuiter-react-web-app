@@ -1,0 +1,54 @@
+.wd-avatar {
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.wd-quote-avatar {
+    height: 20px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.wd-image {
+    height: auto;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.wd-username {
+    color: black;
+    font-weight: bold;
+}
+
+.wd-mark {
+    color: white;
+    background-color: lightskyblue;
+    border-radius: 50%;
+}
+
+.wd-post-section {
+    border-radius: 5%;
+    border: solid 2px rgba(47, 51, 54, .7);
+}
+
+.wd-post-title {
+    color: white;
+    font-weight: bold;
+}
+
+.wd-thread {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+
+.wd-quote {
+    padding: 12px;
+    margin-left: 0px;
+    border-radius: 20px;
+}
+
+.wd-retweeted {
+    text-align: end;
+}

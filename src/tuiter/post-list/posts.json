@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "123",
+    "avatar": "elonmusk-avatar.png",
+    "userName": "Elon Musk",
+    "handle": "@elonmusk",
+    "time": "23h",
+    "summary": "Consumers are suing Sazerac Company, Inc., the makers of Fireball whiskey,\n                    for\n                    fraud and\n                    misrepresentation, as the mini bottles of the alcoholic beverage don't actually contain whiskey.",
+    "image": "inspiration4.png",
+    "comments": "4.7K",
+    "retweets": "3.5K",
+    "likes": "37.5K",
+    "retweetedBy": "Elon Musk",
+    "showThread": true,
+    "quote": ""
+  },
+  {
+    "_id": "456",
+    "avatar": "newyorkpost-avatar.png",
+    "userName": "New York Post",
+    "handle": "@nypost",
+    "time": "23h",
+    "summary": "Grimes seen reading Karl Marx following split with world’s richest man Elon Musk",
+    "image": "",
+    "comments": "965",
+    "retweets": "2.4K",
+    "likes": "4K",
+    "retweetedBy": "",
+    "showThread": false,
+    "quote": {
+      "avatar": "spacex.png",
+      "userName": "SpaceX",
+      "handle": "@SpaceX",
+      "time": "16h",
+      "summary": "Starlink for RVs now has over 100,000 customers! Access high-speed, low-latency internet on an as-needed basis anywhere Starlink provides active coverage -> starlink.com/rv"
+    }
+  }
+]
