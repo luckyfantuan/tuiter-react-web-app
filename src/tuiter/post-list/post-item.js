@@ -23,9 +23,9 @@ const PostItem = (
     }
 ) => {
     const showThread = post.showThread;
-    const isRetweeted = post.retweetedBy != "";
-    const showImage = post.image != "";
-    const showQuote = post.quote != "";
+    const isRetweeted = post.retweetedBy !== "";
+    const showImage = post.image !== "";
+    const showQuote = post.quote !== "";
     return (
         <div className="wd-border-bottom mt-2 mb-2">
             {isRetweeted && <div className="row">
@@ -40,7 +40,7 @@ const PostItem = (
             </div>}
             <div className="row">
                 <div className="col-1">
-                    <img className="wd-avatar align-middle" src={`/images/${post.avatar}`}/>
+                    <img className="wd-avatar align-middle" src={`/images/${post.avatar}`} alt="avatar"/>
                 </div>
                 <div className="col-11">
                     <div className="row justify-content-start">
@@ -54,12 +54,13 @@ const PostItem = (
                         <p>{post.summary}</p>
                     </div>
                     <div className="row">
-                        {showImage && <img className="wd-image" src={`/images/${post.image}`}/>}
+                        {showImage && <img className="wd-image" src={`/images/${post.image}`} alt="image"/>}
                     </div>
                     {showQuote && <div className="row border wd-quote">
                         <div className="row justify-content-start">
                             <div className="col me-auto">
-                                <img className="wd-quote-avatar align-middle" src={`/images/${post.quote.avatar}`}/>
+                                <img className="wd-quote-avatar align-middle" src={`/images/${post.quote.avatar}`}
+                                     alt="quote avatar"/>
                                 <span className="wd-username"> {post.quote.userName} </span>
                                 <i className="bi bi-check-lg wd-mark"></i>
                                 <span> {post.quote.handle} &#x2022; {post.quote.time}</span>
