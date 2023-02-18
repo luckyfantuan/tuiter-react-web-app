@@ -54,7 +54,7 @@ const PostItem = (
                         <p>{post.summary}</p>
                     </div>
                     <div className="row">
-                        {showImage && <img className="wd-image" src={`/images/${post.image}`} alt="post image"/>}
+                        {showImage && <img className="wd-image" src={`/images/${post.image}`} alt="detail"/>}
                     </div>
                     {showQuote && <div className="row border wd-quote">
                         <div className="row justify-content-start">
@@ -85,7 +85,7 @@ const PostItem = (
                         </div>
                     </div>
                     {showThread && <div className="row">
-                        <a href="#" className="wd-thread" href="#">Show this thread</a>
+                        <a href="/tuiter" className="wd-thread">Show this thread</a>
                     </div>}
                 </div>
             </div>
