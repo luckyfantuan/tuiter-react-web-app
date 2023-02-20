@@ -48,7 +48,7 @@ const PostItem = (
                             <span className="wd-username">{post.userName} </span>
                             <i className="bi bi-check-lg wd-mark"></i> <span>{post.handle} &#x2022; {post.time}</span>
                         </div>
-                        <div className="col-auto">&#x2022; &#x2022; &#x2022;</div>
+                        <div className="col-auto">&#x2022;&#x2022;&#x2022;</div>
                     </div>
                     <div className="row">
                         <p>{post.summary}</p>
