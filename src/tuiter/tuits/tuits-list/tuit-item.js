@@ -1,5 +1,6 @@
 import React from "react";
 import StatsComponent from "./tuit-stats";
+import './index.css';
 
 const TuitItem = (
     {
@@ -21,10 +22,10 @@ const TuitItem = (
     return (
         <li className="list-group-item">
             <div className="row">
-                <div className="col-1">
-                    <img className="wd-avatar align-middle" src={`/images/${tuit.image}`} alt="avatar"/>
+                <div className="col-2">
+                    <img className="wd-avatar-tuit align-middle img-fluid" src={`/images/${tuit.image}`} alt="avatar"/>
                 </div>
-                <div className="col-11">
+                <div className="col-10">
                     <div className="row justify-content-start">
                         <div className="col me-auto">
                             <span className="wd-username">{tuit.userName} </span>
