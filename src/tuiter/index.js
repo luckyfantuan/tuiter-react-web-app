@@ -26,7 +26,6 @@ function Tuiter() {
                     <Routes>
                         <Route path="home" element={<HomeComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
-                        {/*To avoid no content in the middle, add home component here*/}
                         <Route path="" element={<TuitsComponent/>}/>
                     </Routes>
                 </div>
