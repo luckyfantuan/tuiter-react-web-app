@@ -3,6 +3,7 @@ import NavigationSidebar
 import WhoToFollowList from "./who-to-follow-list";
 import ExploreComponent from "./explore";
 import HomeComponent from "./home";
+import TuitsComponent from "./tuits/tuits-list";
 import {Routes, Route} from "react-router";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
@@ -26,7 +27,7 @@ function Tuiter() {
                         <Route path="home" element={<HomeComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
                         {/*To avoid no content in the middle, add home component here*/}
-                        <Route path="" element={<HomeComponent/>}/>
+                        <Route path="" element={<TuitsComponent/>}/>
                     </Routes>
                 </div>
                 <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
