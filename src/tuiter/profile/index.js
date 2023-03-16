@@ -1,11 +1,10 @@
 import React from "react";
-import Profile from "./profile"
+import ProfileItem from "./profile"
 
 const ProfileComponent = () => {
     return (
         <>
-            <h4>Profile</h4>
-            <Profile/>
+            <ProfileItem/>
         </>
     );
 };
