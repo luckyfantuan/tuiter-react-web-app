@@ -1,5 +1,6 @@
 import React from "react";
 import './index.css';
+import {Link} from "react-router-dom";
 
 const ProfileItem = (
     {
@@ -43,9 +44,9 @@ const ProfileItem = (
                 </div>
 
                 <div className="position-absolute wd-button-component">
-                    <button type=" button"
-                            className=" btn btn-outline-secondary wd-edit-profile-btn">Edit profile
-                    </button>
+                    <Link to="/tuiter/edit-profile"
+                          className=" btn btn-outline-secondary wd-edit-profile-btn">Edit profile
+                    </Link>
                 </div>
 
             </div>
