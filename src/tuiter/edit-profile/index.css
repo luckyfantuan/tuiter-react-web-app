@@ -1,4 +1,19 @@
-.wd-edit-profile {
+#wd-edit-profile {
     font-weight: bold;
-    vertical-align: center;
+}
+
+.wd-back-button {
+    font-weight: bold;
+    color: black;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.wd-bio-input {
+    width: auto;
+    min-width: fit-content;
+    height: auto;
 }

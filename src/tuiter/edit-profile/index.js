@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import {Link} from "react-router-dom";
 
 const EditProfileComponent = (
     {
@@ -12,7 +13,7 @@ const EditProfileComponent = (
             "bannerPicture": "lilibanner.jpeg",
             "website": 'youtube.com/webdevtv',
             "location": 'Seattle, WA',
-            "dateOfBirth": "9/18/2000",
+            "dateOfBirth": "09/18/2000",
             "dateJoined": '10/2020',
             "followingCount": 340,
             "followersCount": 223,
@@ -20,17 +21,24 @@ const EditProfileComponent = (
         }
     }
 ) => {
+    const name = profile.firstName + " " + profile.lastName
+    const birthYear = profile.dateOfBirth.slice(-4);
+    const birthMonth = profile.dateOfBirth.slice(0, 2);
+    const birthDay = profile.dateOfBirth.slice(3, 5);
+    const valueBOD = birthYear + "-" + birthMonth + "-" + birthDay;
     return (
         <div className="wd-border-bottom mt-2 mb-2">
             <div className="row">
                 <div className="col-auto">
-                    <button type="button" className="btn"><i
-                        className="bi bi-x-lg align-middle"></i></button>
+                    <Link to="/tuiter/profile"
+                          className=" bi bi-x-lg align-middle ms-1 wd-back-button">
+                    </Link>
                 </div>
-                <div className="col-auto mt-2 wd-edit-profile">Edit Profile</div>
-                <div className="col float-end">
-                    <button type="button" className="btn btn-secondary">Save</button>
+                <div className="col-auto" id="wd-edit-profile">Edit Profile</div>
+                <div className="col">
+                    <button className="btn btn-secondary">Save</button>
                 </div>
+
 
             </div>
             <div className="position-relative wd-parent-height">
@@ -45,26 +53,34 @@ const EditProfileComponent = (
                 </div>
             </div>
             <div>
-                <div className=" wd-profile-name ms-lg-5">{profile.firstName} {profile.lastName} </div>
-                <div className=" ms-lg-5">{profile.handle}</div>
+                <label for="name">Name</label>
+                <div><input type="textarea" id="name" placeholder="Name" value={name}/></div>
             </div>
-            <div className=" ms-lg-5 mt-2">{profile.bio}</div>
-            <div className=" row mt-2 d-flex justify-content-start">
-                <div className="col-auto"><i className=" bi bi-geo-alt ms-lg-5">{profile.location}</i></div>
-                <div className="col-auto"><i className=" bi bi-balloon ms-1 float-left">{profile.dateOfBirth}</i>
-                </div>
-                <div className="col-auto"><i
-                    className=" bi bi-calendar3 float-left">Joined {profile.dateJoined}</i>
+            <div>
+                <label htmlFor="bio">Bio</label>
+                <div><input type="textarea" id="bio" placeholder="Bio" className="wd-bio-input" value={profile.bio}/>
                 </div>
             </div>
-            <div className=" row mt-2 d-flex">
-                <div className="col-auto"><i
-                    className=" bi bi-geo-alt ms-lg-5 col wd-bold">{profile.followingCount}</i> Following
-                </div>
-                <div className="col-auto"><i
-                    className=" bi bi-balloon col-4 ms-1 wd-bold justify-content-start">{profile.followersCount} </i>Followers
+            <div>
+                <label htmlFor="location">Location</label>
+                <div><input type="textarea" id="location" placeholder="Location" className="wd-bio-input"
+                            value={profile.location}/>
                 </div>
             </div>
+            <div>
+                <label htmlFor="website">Website</label>
+                <div><input type="textarea" id="website" placeholder="Website" className="wd-bio-input"
+                            value={profile.website}/>
+                </div>
+            </div>
+
+            <div>
+                <label htmlFor="birthdate">Birth date</label>
+                <div><input type="date" id="birthdate" placeholder="Birth date" className="wd-bio-input"
+                            value={valueBOD}/>
+                </div>
+            </div>
+
 
         </div>
     );
