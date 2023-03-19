@@ -16,6 +16,7 @@ const EditProfileComponent = () => {
         const name = event.target.id;
         const value = event.target.value;
         setProfile(values => ({...values, [name]: value}))
+        console.log("new profile is: ", profile);
     }
 
     const editProfile = () => {
@@ -76,8 +77,8 @@ const EditProfileComponent = () => {
             </div>
 
             <div>
-                <label htmlFor="birthdate">Birth date</label>
-                <div><input type="date" id="birthdate" className="wd-bio-input"
+                <label htmlFor="dateOfBirth">Birth date</label>
+                <div><input type="date" id="dateOfBirth" className="wd-bio-input"
                             defaultValue={dob} onChange={handleChange}/>
                 </div>
             </div>
