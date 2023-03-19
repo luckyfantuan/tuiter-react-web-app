@@ -1,31 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import "./index.css";
 import {Link} from "react-router-dom";
+import {updateProfile} from "../reducers/profile-reducer";
+import {useDispatch, useSelector} from "react-redux";
 
-const EditProfileComponent = (
-    {
-        profile = {
-            "firstName": "Lili",
-            "lastName": "Qing",
-            "handle": "@liliqing",
-            "bio": "MSCS Align Student @NEU",
-            "profilePicture": "liliqing.png",
-            "bannerPicture": "lilibanner.jpeg",
-            "website": 'youtube.com/webdevtv',
-            "location": 'Seattle, WA',
-            "dateOfBirth": "09/18/2000",
-            "dateJoined": '10/2020',
-            "followingCount": 340,
-            "followersCount": 223,
-            "tuitsCount": 6114
-        }
+const EditProfileComponent = () => {
+    const myProfile = useSelector((state) => state.profile)
+    const [profile, setProfile] = useState(myProfile
+    );
+
+    const dispatch = useDispatch();
+    const dob = profile.dateOfBirth
+
+    const handleChange = (event) => {
+        const name = event.target.id;
+        const value = event.target.value;
+        setProfile(values => ({...values, [name]: value}))
     }
-) => {
-    const name = profile.firstName + " " + profile.lastName
-    const birthYear = profile.dateOfBirth.slice(-4);
-    const birthMonth = profile.dateOfBirth.slice(0, 2);
-    const birthDay = profile.dateOfBirth.slice(3, 5);
-    const valueBOD = birthYear + "-" + birthMonth + "-" + birthDay;
+
+    const editProfile = () => {
+        dispatch(updateProfile(profile));
+    }
     return (
         <div className="wd-border-bottom mt-2 mb-2">
             <div className="row">
@@ -36,7 +31,7 @@ const EditProfileComponent = (
                 </div>
                 <div className="col-auto" id="wd-edit-profile">Edit Profile</div>
                 <div className="col">
-                    <button className="btn btn-secondary">Save</button>
+                    <button className="btn btn-secondary" onClick={editProfile}>Save</button>
                 </div>
 
 
@@ -53,35 +48,39 @@ const EditProfileComponent = (
                 </div>
             </div>
             <div>
-                <label for="name">Name</label>
-                <div><input type="textarea" id="name" placeholder="Name" value={name}/></div>
+                <label htmlFor="firstName">First Name</label>
+                <div><input type="textarea" id="firstName" onChange={handleChange} placeholder={profile.firstName}/>
+                </div>
+            </div>
+            <div>
+                <label htmlFor="lastName">Last Name</label>
+                <div><input type="textarea" id="lastName" onChange={handleChange} placeholder={profile.lastName}/></div>
             </div>
             <div>
                 <label htmlFor="bio">Bio</label>
-                <div><input type="textarea" id="bio" placeholder="Bio" className="wd-bio-input" value={profile.bio}/>
+                <div><input type="textarea" id="bio" className="wd-bio-input" placeholder={profile.bio}
+                            onChange={handleChange}/>
                 </div>
             </div>
             <div>
                 <label htmlFor="location">Location</label>
-                <div><input type="textarea" id="location" placeholder="Location" className="wd-bio-input"
-                            value={profile.location}/>
+                <div><input type="textarea" id="location" className="wd-bio-input"
+                            placeholder={profile.location} onChange={handleChange}/>
                 </div>
             </div>
             <div>
                 <label htmlFor="website">Website</label>
-                <div><input type="textarea" id="website" placeholder="Website" className="wd-bio-input"
-                            value={profile.website}/>
+                <div><input type="textarea" id="website" className="wd-bio-input"
+                            placeholder={profile.website} onChange={handleChange}/>
                 </div>
             </div>
 
             <div>
                 <label htmlFor="birthdate">Birth date</label>
-                <div><input type="date" id="birthdate" placeholder="Birth date" className="wd-bio-input"
-                            value={valueBOD}/>
+                <div><input type="date" id="birthdate" className="wd-bio-input"
+                            defaultValue={dob} onChange={handleChange}/>
                 </div>
             </div>
-
-
         </div>
     );
 };

@@ -1,26 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import './index.css';
 import {Link} from "react-router-dom";
+import {useSelector} from "react-redux";
 
-const ProfileItem = (
-    {
-        profile = {
-            "firstName": "Lili",
-            "lastName": "Qing",
-            "handle": "@liliqing",
-            "bio": "MSCS Align Student @NEU",
-            "profilePicture": "liliqing.png",
-            "bannerPicture": "lilibanner.jpeg",
-            "website": 'youtube.com/webdevtv',
-            "location": 'Seattle, WA',
-            "dateOfBirth": "9/18/2000",
-            "dateJoined": '10/2020',
-            "followingCount": 340,
-            "followersCount": 223,
-            "tuitsCount": 6114
-        }
-    }
-) => {
+const ProfileItem = () => {
+    const myProfile = useSelector((state) => state.profile)
+    const [profile, setProfile] = useState(myProfile
+    );
     return (
         <div className="wd-border-bottom mt-2 mb-2">
             <div className="row">
