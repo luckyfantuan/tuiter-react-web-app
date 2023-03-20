@@ -39,7 +39,7 @@ const EditProfileComponent = () => {
             </div>
             <div className="position-relative wd-parent-height">
                 <div className="position-absolute top-10">
-                    <img className="wd-banner-image" src={`/images/${profile.bannerPicture}`} alt=" banner image"/>
+                    <img className="wd-banner-image" src={`/images/${profile.bannerPicture}`} alt=" banner"/>
                 </div>
 
                 <div className="wd-zindex-bring-to-front wd-absolute-avatar-component">
@@ -48,36 +48,40 @@ const EditProfileComponent = () => {
                          alt=" profile"/>
                 </div>
             </div>
-            <div>
-                <label htmlFor="firstName">First Name</label>
-                <div><input type="textarea" id="firstName" onChange={handleChange} placeholder={profile.firstName}/>
-                </div>
+
+            <div className="form-control">
+                <label className="form-control-label" htmlFor="firstName">First Name</label>
+                <input className="form-control border-0 ps-0" type="textarea" id="firstName"
+                       onChange={handleChange}
+                       placeholder={profile.firstName}/>
             </div>
-            <div>
+            <div className="form-control mt-4">
                 <label htmlFor="lastName">Last Name</label>
-                <div><input type="textarea" id="lastName" onChange={handleChange} placeholder={profile.lastName}/></div>
+                <div><input className="form-control border-0 ps-0" type="textarea" id="lastName" onChange={handleChange}
+                            placeholder={profile.lastName}/></div>
             </div>
-            <div>
+            <div className="form-control mt-4">
                 <label htmlFor="bio">Bio</label>
-                <div><input type="textarea" id="bio" className="wd-bio-input" placeholder={profile.bio}
+                <div><input type="textarea" id="bio" className="wd-bio-input form-control border-0 ps-0"
+                            placeholder={profile.bio}
                             onChange={handleChange}/>
                 </div>
             </div>
-            <div>
+            <div className="form-control mt-4">
                 <label htmlFor="location">Location</label>
-                <div><input type="textarea" id="location" className="wd-bio-input"
+                <div><input type="textarea" id="location" className="wd-bio-input form-control border-0 ps-0"
                             placeholder={profile.location} onChange={handleChange}/>
                 </div>
             </div>
-            <div>
+            <div className="form-control mt-4">
                 <label htmlFor="website">Website</label>
-                <div><input type="textarea" id="website" className="wd-bio-input"
+                <div><input type="textarea" id="website" className="wd-bio-input form-control border-0 ps-0"
                             placeholder={profile.website} onChange={handleChange}/>
                 </div>
             </div>
 
-            <div>
-                <label htmlFor="dateOfBirth">Birth date</label>
+            <div className="mt-4">
+                <label htmlFor="dateOfBirth ">Birth date &#x2022; Edit</label>
                 <div><input type="date" id="dateOfBirth" className="wd-bio-input"
                             defaultValue={dob} onChange={handleChange}/>
                 </div>
