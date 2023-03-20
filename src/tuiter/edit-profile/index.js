@@ -37,9 +37,9 @@ const EditProfileComponent = () => {
                 </div>
                 <div className="col-auto wd-edit-profile-button" id="wd-edit-profile">Edit Profile</div>
                 <div className="col">
-                    <button className="btn btn-secondary float-end wd-save-button mb-2"
-                            onClick={editProfile}>Save
-                    </button>
+                    <Link to="../profile" className="btn btn-secondary float-end wd-save-button mb-2"
+                          onClick={editProfile}>Save
+                    </Link>
                 </div>
             </div>
             <div className="position-relative wd-parent-height">
