@@ -22,20 +22,25 @@ const EditProfileComponent = () => {
     const editProfile = () => {
         dispatch(updateProfile(profile));
     }
+
+    const onClick = () => {
+        document.getElementById("dobShown").hidden = true;
+        document.getElementById("dateOfBirth").hidden = false;
+    }
     return (
         <div className="wd-border-bottom mt-2 mb-2">
             <div className="row">
-                <div className="col-auto">
+                <div className="col-auto d-flex align-items-center">
                     <Link to="/tuiter/profile"
                           className=" bi bi-x-lg align-middle ms-1 wd-back-button">
                     </Link>
                 </div>
-                <div className="col-auto" id="wd-edit-profile">Edit Profile</div>
+                <div className="col-auto wd-edit-profile-button" id="wd-edit-profile">Edit Profile</div>
                 <div className="col">
-                    <button className="btn btn-secondary" onClick={editProfile}>Save</button>
+                    <button className="btn btn-secondary float-end wd-save-button mb-2"
+                            onClick={editProfile}>Save
+                    </button>
                 </div>
-
-
             </div>
             <div className="position-relative wd-parent-height">
                 <div className="position-absolute top-10">
@@ -51,41 +56,50 @@ const EditProfileComponent = () => {
 
             <div className="form-control">
                 <label className="form-control-label" htmlFor="firstName">First Name</label>
-                <input className="form-control border-0 ps-0" type="textarea" id="firstName"
+                <input className="form-control border-0 ps-0 pt-0" type="textarea" id="firstName"
                        onChange={handleChange}
                        placeholder={profile.firstName}/>
             </div>
             <div className="form-control mt-4">
                 <label htmlFor="lastName">Last Name</label>
-                <div><input className="form-control border-0 ps-0" type="textarea" id="lastName" onChange={handleChange}
+                <div><input className="form-control border-0 ps-0 pt-0" type="textarea" id="lastName"
+                            onChange={handleChange}
                             placeholder={profile.lastName}/></div>
             </div>
             <div className="form-control mt-4">
                 <label htmlFor="bio">Bio</label>
-                <div><input type="textarea" id="bio" className="wd-bio-input form-control border-0 ps-0"
+                <div><input type="textarea" id="bio" className="wd-bio-input form-control border-0 ps-0 pt-0"
                             placeholder={profile.bio}
                             onChange={handleChange}/>
                 </div>
             </div>
             <div className="form-control mt-4">
                 <label htmlFor="location">Location</label>
-                <div><input type="textarea" id="location" className="wd-bio-input form-control border-0 ps-0"
+                <div><input type="textarea" id="location" className="wd-bio-input form-control border-0 ps-0 pt-0"
                             placeholder={profile.location} onChange={handleChange}/>
                 </div>
             </div>
             <div className="form-control mt-4">
                 <label htmlFor="website">Website</label>
-                <div><input type="textarea" id="website" className="wd-bio-input form-control border-0 ps-0"
+                <div><input type="textarea" id="website" className="wd-bio-input form-control border-0 ps-0 pt-0"
                             placeholder={profile.website} onChange={handleChange}/>
                 </div>
             </div>
 
             <div className="mt-4">
-                <label htmlFor="dateOfBirth ">Birth date &#x2022; Edit</label>
-                <div><input type="date" id="dateOfBirth" className="wd-bio-input"
+                <label htmlFor="dateOfBirth ">Birth date &#x2022;
+                    <span className="link-primary"
+                          onClick={onClick}>Edit
+                    </span>
+                </label>
+                <p id="dobShown">Sep 18th, 2000</p>
+                <div><input type="date" id="dateOfBirth" className="wd-date-input border-0" hidden="true"
                             defaultValue={dob} onChange={handleChange}/>
                 </div>
             </div>
+
+            <div className="form-control mt-4 border-0 ps-0">Switch to professional<span
+                className="bi bi-arrow-right float-end"></span></div>
         </div>
     );
 };

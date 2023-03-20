@@ -17,3 +17,18 @@ label {
     min-width: fit-content;
     height: auto;
 }
+
+.wd-date-input {
+    /*display: none;*/
+}
+
+.wd-save-button {
+    background-color: #0a53be;
+    border-radius: 50px !important;
+    background-color: black !important;
+}
+
+.wd-edit-profile-button {
+    display: flex;
+    align-items: center;
+}
