@@ -24,7 +24,7 @@ const ProfileItem = () => {
                 </div>
 
                 <div className="wd-zindex-bring-to-front wd-absolute-avatar-component">
-                    <img className="wd-avatar-profile"
+                    <img className="wd-avatar-profile rounded-circle"
                          src={`/images/${profile.profilePicture}`}
                          alt=" profile"/>
                 </div>
@@ -46,15 +46,15 @@ const ProfileItem = () => {
                 <div className="col-auto"><i className=" bi bi-balloon ms-1 float-left">{profile.dateOfBirth}</i>
                 </div>
                 <div className="col-auto"><i
-                    className=" bi bi-calendar3 float-left">Joined {profile.dateJoined}</i>
+                    className=" bi bi-calendar3 float-left"> Joined {profile.dateJoined}</i>
                 </div>
             </div>
             <div className=" row mt-2 d-flex">
                 <div className="col-auto"><i
-                    className=" bi bi-geo-alt ms-lg-5 col wd-bold">{profile.followingCount}</i> Following
+                    className="ms-lg-5 col wd-bold">{profile.followingCount}</i> Following
                 </div>
                 <div className="col-auto"><i
-                    className=" bi bi-balloon col-4 ms-1 wd-bold justify-content-start">{profile.followersCount} </i>Followers
+                    className=" col-4 ms-1 wd-bold justify-content-start">{profile.followersCount} </i>Followers
                 </div>
             </div>
 
