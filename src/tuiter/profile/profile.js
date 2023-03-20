@@ -5,7 +5,7 @@ import {useSelector} from "react-redux";
 
 const ProfileItem = () => {
     const myProfile = useSelector((state) => state.profile)
-    const [profile, setProfile] = useState(myProfile
+    const [profile] = useState(myProfile
     );
     return (
         <div className="wd-border-bottom mt-2 mb-2">
@@ -20,13 +20,13 @@ const ProfileItem = () => {
             </div>
             <div className="position-relative wd-parent-height">
                 <div className="position-absolute top-10">
-                    <img className="wd-banner-image" src={`/images/${profile.bannerPicture}`} alt=" banner image"/>
+                    <img className="wd-banner-image" src={`/images/${profile.bannerPicture}`} alt="banner"/>
                 </div>
 
                 <div className="wd-zindex-bring-to-front wd-absolute-avatar-component">
                     <img className="wd-avatar-profile"
                          src={`/images/${profile.profilePicture}`}
-                         alt=" profile image"/>
+                         alt=" profile"/>
                 </div>
 
                 <div className="position-absolute wd-button-component">

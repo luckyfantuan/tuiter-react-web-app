@@ -45,7 +45,7 @@ const EditProfileComponent = () => {
                 <div className="wd-zindex-bring-to-front wd-absolute-avatar-component">
                     <img className="wd-avatar-profile"
                          src={`/images/${profile.profilePicture}`}
-                         alt=" profile image"/>
+                         alt=" profile"/>
                 </div>
             </div>
             <div>
