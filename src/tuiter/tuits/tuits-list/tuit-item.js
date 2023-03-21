@@ -36,7 +36,8 @@ const TuitItem = (
                     <div className="row justify-content-start">
                         <div className="col me-auto">
                             <span className="wd-username">{tuit.userName} </span>
-                            <i className="bi bi-check-lg wd-mark"></i> <span>{tuit.handle} &#x2022; {tuit.time}</span>
+                            <i className="bi bi-check-circle-fill wd-check-mark"></i>
+                            <span className="ps-1">{tuit.handle} &#x2022; {tuit.time}</span>
                             <i className="bi bi-x-lg float-end"
                                onClick={() => deleteTuitHandler(tuit._id)}></i>
                         </div>
