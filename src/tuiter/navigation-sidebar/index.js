@@ -8,7 +8,7 @@ const NavigationSidebar = () => {
     const active = paths[2];
     return (
         <div className="list-group wd-navigation">
-            <a href="/tuiter" className="list-group-item list-group-item-action">Tuiter</a>
+            <Link href="/tuiter" className="list-group-item list-group-item-action">Tuiter</Link>
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
                 <i className="bi bi-house-fill"></i> <span
                 className="d-inline list-text d-none d-xl-inline-block d-l-none">Home</span>
