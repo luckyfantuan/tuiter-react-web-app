@@ -9,7 +9,7 @@ const NavigationSidebar = () => {
     return (
         <div className="list-group wd-navigation">
             <a href="/tuiter" className="list-group-item list-group-item-action">Tuiter</a>
-            <Link to="/tuiter/home" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
+            <Link to="/tuiter" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
                 <i className="bi bi-house-fill"></i> <span
                 className="d-inline list-text d-none d-xl-inline-block d-l-none">Home</span>
             </Link>
@@ -17,7 +17,7 @@ const NavigationSidebar = () => {
                 <i className="bi bi-hash"></i> <span
                 className="d-inline d-none d-xl-inline-block d-l-none list-text">Explore</span>
             </Link>
-            <Link to="/" className="list-group-item">
+            <Link to="/tuiter" className="list-group-item">
                 <i className="bi bi-tag-fill"></i> <span
                 className="d-inline d-none d-xl-inline-block d-l-none list-text">Labs</span>
             </Link>
