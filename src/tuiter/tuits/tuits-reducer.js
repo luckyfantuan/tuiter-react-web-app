@@ -43,7 +43,13 @@ const tuitsSlice = createSlice({
             (state, action) => {
                 state.loading = false
                 state.error = action.error
-            }
+            },
+        [deleteTuitThunk.fulfilled]:
+            (state, {payload}) => {
+                state.loading = false
+                state.tuits = state.tuits
+                    .filter(t => t._id !== payload)
+            },
     },
 
     reducers: {
