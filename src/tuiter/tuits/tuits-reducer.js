@@ -1,5 +1,12 @@
 import {createSlice} from "@reduxjs/toolkit";
 import tuits from './tuits.json';
+import {findTuitsThunk}
+    from "../../services/tuits-thunks";
+
+const initialState = {
+    tuits: [],
+    loading: false
+}
 
 const currentUser = {
     "userName": "NASA",
@@ -20,7 +27,25 @@ const templateTuit = {
 
 const tuitsSlice = createSlice({
     name: 'tuits',
-    initialState: tuits,
+    initialState: initialState,
+    extraReducers: {
+        [findTuitsThunk.pending]:
+            (state) => {
+                state.loading = true
+                state.tuits = []
+            },
+        [findTuitsThunk.fulfilled]:
+            (state, {payload}) => {
+                state.loading = false
+                state.tuits = payload
+            },
+        [findTuitsThunk.rejected]:
+            (state, action) => {
+                state.loading = false
+                state.error = action.error
+            }
+    },
+
     reducers: {
         updateLiked(state, action) {
             const tuit = state.find((tuit) => tuit._id === action.payload._id)
