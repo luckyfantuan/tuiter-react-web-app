@@ -60,6 +60,7 @@ const tuitsSlice = createSlice({
             },
         [updateTuitThunk.fulfilled]:
             (state, {payload}) => {
+                console.log("updateTuitThunk called!!!")
                 state.loading = false
                 const tuitNdx = state.tuits
                     .findIndex((t) => t._id === payload._id)

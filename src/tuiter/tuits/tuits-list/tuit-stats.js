@@ -1,6 +1,7 @@
 import React from "react";
-import {updateLiked} from "../tuits-reducer";
+// import {updateLiked} from "../tuits-reducer";
 import {useDispatch} from "react-redux";
+import {updateTuitThunk} from "../../../services/tuits-thunks"
 
 const TuitStats = (
     {
@@ -21,8 +22,8 @@ const TuitStats = (
 ) => {
     const dispatch = useDispatch();
     const isLiked = tuit.liked;
-    const toggleLiked = (tuit) => {
-        dispatch(updateLiked(tuit))
+    const toggleLiked = (inre) => {
+        dispatch(updateTuitThunk({...tuit, likes: tuit.likes + inre, liked: !tuit.liked}))
     }
     return (
         <div className="row justify-content-evenly mt-2">
@@ -34,8 +35,8 @@ const TuitStats = (
             </div>
             <div className="col">
                 {isLiked ?
-                    <i className="bi bi-heart-fill" onClick={() => toggleLiked(tuit)}> <span>{tuit.likes}</span></i> :
-                    <i className="bi bi-heart" onClick={() => toggleLiked(tuit)}> <span>{tuit.likes}</span></i>}
+                    <i className="bi bi-heart-fill" onClick={() => toggleLiked(-1)}> <span>{tuit.likes}</span></i> :
+                    <i className="bi bi-heart" onClick={() => toggleLiked(1)}> <span>{tuit.likes}</span></i>}
             </div>
             <div className="col">
                 <i className="bi bi-share"></i>
