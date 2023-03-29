@@ -9,6 +9,7 @@ import {useSelector} from "react-redux";
 const TuitsList = () => {
     const {tuits, loading} = useSelector(
         state => state.tuitsData)
+    console.log("In tuits-list tuits is:", tuits);
     console.log(loading)
     const dispatch = useDispatch();
     useEffect(() => {
