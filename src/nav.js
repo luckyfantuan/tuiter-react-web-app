@@ -5,8 +5,8 @@ function Nav() {
         <div>
             {/*<Link to="/">Labs</Link> |*/}
             {/*<Link to="/">Assignment 6</Link> |*/}
-            <Link to="/a7">Assignment 7</Link> |
-            <Link to="/tuiter">Tuiter</Link>
+            {/*<Link to="/a7">Assignment 7</Link> |*/}
+            <Link to="/tuiter">Dear TA: pleae be patient as it loads slower from a server :( ==> Tuiter</Link>
         </div>
     )
 }
