@@ -7,7 +7,6 @@ import {findTuitsThunk} from "../../services/tuits-thunks";
 const PostSummaryList = () => {
     const {tuits, loading} = useSelector(
         state => state.tuitsData)
-    console.log("In post-summary-list postsArray is:", tuits);
     console.log(loading)
     const dispatch = useDispatch();
     useEffect(() => {
